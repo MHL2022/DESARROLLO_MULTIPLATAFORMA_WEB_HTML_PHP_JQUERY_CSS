@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Abrimos la etiqueta de la página -->
+<html lang="es">
+<!-- Definimos el head -->
+<head>
+	<title> Actividad 1_3_Obligatoria </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/miestilo.css">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+	
+</head>
+<body>
+
+<header>
+</header>
+<nav id="menu_superior"><!-- menú de navegación superior -->
+	<ul>
+		<a href="index.html">INICIO</a>                      |
+
+		<a href="tren.html">TREN</a>                         |
+ 
+		<a href="grafico2d.html">GRÁFICO2D</a>               | 
+
+		<a href="localizacion.html"><b><i>LOCALIZACIÓN</b></i></a>         |
+
+		<a href="almacenamiento.html">ALMACENAMIENTO</a>
+	</ul>
+</nav>
+  <div id="map-canvas"></div>
+ <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+   
+	 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    <script>
+
+var map;
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+  // Probamos la geolocalización  HTML5 
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = new google.maps.LatLng(position.coords.latitude,
+                                       position.coords.longitude);
+
+      var infowindow = new google.maps.InfoWindow({
+        map: map,
+        position: pos,
+        content: 'Localización usando HTML5.'
+      });
+
+      map.setCenter(pos);
+    }, function() {
+      handleNoGeolocation(true);
+    });
+  } else {
+    //  El navegador no admite la geolocalización
+    handleNoGeolocation(false);
+  }
+}
+
+function handleNoGeolocation(errorFlag) {
+  if (errorFlag) {
+    var content = 'Error: El servicio de Geolocalización ha fallado.';
+  } else {
+    var content = 'Error: Tu navegador no soporta la Geolocalización.';
+  }
+
+  var options = {
+    map: map,
+    position: new google.maps.LatLng(60, 105),
+    content: content
+  };
+
+  var infowindow = new google.maps.InfoWindow(options);
+  map.setCenter(options.position);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+<footer id="menu_inferior">
+<nav>	<!-- menú de navegación inferior -->
+	<ul>
+		<a href="index.html">Inicio</a>              |
+
+		<a href="tren.html">Puzzle</a>               |
+
+		<a href="grafico2d.html">Gráfico2D</a>       | 
+
+		<a href="localizacion.html">Localización</a> |
+
+		<a href="alamcenamiento.html">Almacenamiento</a>
+	</ul>
+</nav>
+</footer>
+</body>
+</html>

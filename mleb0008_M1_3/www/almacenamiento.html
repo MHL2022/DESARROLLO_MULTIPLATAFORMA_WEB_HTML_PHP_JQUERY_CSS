@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- Abrimos la etiqueta de la página -->
+<html lang="es">
+<!-- Definimos el head -->
+<head>
+	<title> Actividad 1_3_Obligatoria </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/miestilo.css">
+<script type="text/javascript">
+
+function iniciar(){
+
+var botonInsertar=document.getElementById('insertarDatos');
+botonInsertar.addEventListener('click', nuevoitem, false);
+
+
+var muestraClaveDada=document.getElementById('dameDatos');
+muestraClaveDada.addEventListener('click', dameItem, false);
+
+var devuelveKey=document.getElementById('devuelveKey');
+devuelveKey.addEventListener('click', devuelveClave, false);
+
+}
+
+function nuevoitem(){
+
+var clave=document.getElementById('clave').value;
+var valor=document.getElementById('valorClaveINSERT').value;
+
+//Agregamos el ítem a nuestro localStorage
+localStorage.setItem(clave,valor);
+
+//Informamos al usuario, no obligatorio pero recomendable
+var informarUsuario=document.getElementById('informarUsuario');
+
+//Leemos los datos insertados anteriormente con localStorage.getItem(Clave)
+var valor=localStorage.getItem(clave);
+
+informarUsuario.innerHTML='<div><p>   '+
+                    'Numero de registros actuales : '+dame_numero_registros()+'</p></div>';
+
+}
+
+function dame_numero_registros(){
+
+return localStorage.length;
+
+}
+
+
+function dameItem(){
+
+var clave=document.getElementById('clavePreguntada').value;
+var valor=document.getElementById('valorClaveGET').value;
+
+//Borramos el item que nos pasa el usuario
+var valor=localStorage.getItem(clave);
+
+//Informamos al usuario, no obligatorio pero recomendable
+var informarUsuario=document.getElementById('valorClaveGET');
+
+informarUsuario.innerHTML=valor;
+
+}
+
+window.addEventListener('load', iniciar, false);
+
+
+</script>
+</head>
+<body>
+
+<header>
+</header>
+<nav id="menu_superior"><!-- menú de navegación superior -->
+	<ul>
+		<a href="index.html">INICIO</a>                      |
+
+		<a href="tren.html">TREN</a>                         |
+ 
+		<a href="grafico2d.html">GRÁFICO2D</a>               | 
+
+		<a href="localizacion.html">LOCALIZACIÓN</a>         |
+
+		<a href="almacenamiento.html"><b><i>ALMACENAMIENTO</b></i></a>
+	</ul>
+</nav>
+<section id="cajaformulario">
+
+    <form name="formulario">
+  
+    <p><h2>Agenda de Teléfonos</h2></p>
+    <section id="informarUsuario">
+
+    </section>
+
+    <p>Nombre:<br><input type="text" name="clave" id="clave"></p>
+    <p>Teléfono:<br><textarea name="text" id="valorClaveINSERT"></textarea></p>
+    <p><input type="button" name="insertarDatos" id="insertarDatos" value="Insertar Datos"></p>
+    <hr>
+    <section>
+    <p><h2>Agenda de Teléfonos</h2></p>
+    <p>Nombre:<br><input type="text" name="clavePreguntada" id="clavePreguntada"></p>
+    <p><input type="button" name="dameDatos" id="dameDatos" value="Dame Datos"></p>
+    <p>Teléfono:<br><textarea name="text" id="valorClaveGET"></textarea></p>
+    <section id="informarUsuario">
+    </section>
+    </section>
+<footer id="menu_inferior">
+<nav>	<!-- menú de navegación inferior -->
+	<ul>
+		<a href="index.html">Inicio</a>              |
+
+		<a href="tren.html">Puzzle</a>               |
+
+		<a href="grafico2d.html">Gráfico2D</a>       | 
+
+		<a href="localizacion.html">Localización</a> |
+
+		<a href="alamcenamiento.html">Almacenamiento</a>
+	</ul>
+</nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+#menu{
+	background-color:#73A9A3; /*ponemos color negro al menu*/
+
+}
+
+#menu ul{                /*le quitamos los puntos de lista*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu ul li{
+	display: inline-block;   /*menu en bloque*/
+
+}
+
+#menu ul li a{
+	color: #FFFFFF;         /*diseño del menu*/
+	display: block;
+	padding: 20px 20px;
+	font-weight:normal;
+	text-decoration: none;
+}
+
+#menu ul li a:hover{
+	background-color: #DCE311;   /*atributo que hace que el menu cambie de color*/
+}
+h1 {
+    font-size: 16px;
+    margin-left: 20%;
+}
+
+#datos {							 /*posición de los datos*/
+	
+	text-align: justify;
+	position: relative;
+	left: 50px;
+
+}
+.close {
+    text-align: center;
+}
+
+/*INICIO CALCULADORA*/
+.contenedor{
+ width:480px;
+ margin:50px auto 0;
+}
+
+.calculadora{
+ width:480px;
+ height:auto;
+ padding:10px 0;
+ margin: auto;
+ background:#DFED46;
+ border:#000 1px solid;
+ border-radius:7px;
+ -webkit-border-radius:7px;
+ -moz-border-radius:7px;
+ box-shadow:rgba(0,0,0,0.4) 0px 2px 5px, inset rgba(255,255,255,0.9) 0px 1px 1px -1px;
+ -webkit-box-shadow:rgba(0,0,0,0.4) 0px 2px 5px, inset rgba(255,255,255,0.9) 0px 1px 1px -1px;
+ -moz-box-shadow:rgba(0,0,0,0.4) 0px 2px 5px, inset rgba(255,255,255,0.9) 0px 1px 1px -1px;
+ background-image:-moz-linear-gradient(top, #dedede, #DFED46);
+ background-image:-webkit-linear-gradient(top, #dedede, #DFED46);
+ background-image:linear-gradient(top, #DFED46,#DFED46);
+ overflow: hidden;
+ text-align: center;
+}
+/*diseño del display*/
+	
+.display{
+width:369px;
+height:93px;
+margin: 12px auto 30px;
+padding:15px 20px;
+color:#2FD4D4 ;
+text-align: right;
+font-size: 3em;
+letter-spacing: 3px;
+overflow:hidden;
+border:orange 1px solid;
+border-radius:7px;
+-webkit-border-radius:7px;
+-moz-border-radius:7px;
+box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
+-webkit-box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
+-moz-box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
+background-image: -moz-linear-gradient(top, white 0%, white 100%);
+background-image: -webkit-linear-gradient(top, white 0%, white 100%);
+background-image: linear-gradient(top, white 0%, white 100%);
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+/*diseño de los botones*/
+	
+.buttons{
+ padding:0;
+ width:369px;
+ margin:auto;
+ overflow: hidden;
+ list-style: none;
+}
+
+.buttons li{
+ display:inline;
+ float:left;
+ padding:0px;
+ margin-right:13px;
+ margin-bottom:10px;
+}
+
+.buttons li:nth-child(4n){
+ margin-right:0;
+}
+
+.buttons a{
+ display:block;
+ width:82px;
+ height:40px;
+ padding:8px 0 2px;
+ color:#2f2f2f!important;
+ font-family: "Myriad Pro", Arial, sans-serif;
+ font-size:1.6em;
+ font-weight: 500;
+ letter-spacing: -2px;
+ background-color:#2FD4D4;
+ border: orange 1px solid;
+ border-radius:5px;
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ text-align: center;
+ text-decoration: none;
+ text-shadow:#000 0px -1px 0px;
+ box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+ -webkit-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+ -moz-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+ background-image:-moz-linear-gradient(top,#2FD4D4 0%, #2FD4D4 40%, #2FD4D4 100%);
+  background-image:-webkit-linear-gradient(top,#2FD4D4 0%, #2FD4D4 40%, #2FD4D4 100%);
+   background-image:linear-gradient(top, #2FD4D4 0%, #2FD4D4 40%, #2FD4D4 100%);
+ -moz-box-sizing:border-box;
+ -webkit-box-sizing:border-box;
+ box-sizing:border-box;
+ cursor: pointer;
+}
+
+.buttons a:active{
+ box-shadow: inset rgba(0,0,0,0.5) 0px 2px 8px;
+ background-image:-moz-linear-gradient(top, #2f2f2f 0%, #363636 100%);
+  background-image:-webkit-linear-gradient(top, #2f2f2f 0%, #363636 100%);
+   background-image:linear-gradient(top, #2f2f2f 0%, #363636 100%);
+}
+
+.igual{width:148px; height:40px; float:right !important;}
+
+
+
+
+/*FIN CALCULADORA*/

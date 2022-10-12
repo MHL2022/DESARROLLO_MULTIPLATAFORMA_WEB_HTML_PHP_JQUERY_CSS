@@ -1,0 +1,31 @@
+/* ======== SELECTORES DE ID ========== */
+
+#imagenempresa {
+    position: relative;
+    margin: 0px;
+    text-align: center;
+}
+
+#desplegables {
+    position: relative;
+    margin: 0px;
+}
+
+#coche {
+
+    width: 80%;
+
+}
+
+/* ======== SELECTORES DE CLASE ========== */
+
+
+
+
+/* ======== SELECTORES DE ELEMENTO ========== */
+
+/* Color y posición para los h1 usados únicamente en el título de la página */
+h1 {
+    color: brown;
+    text-align: center;
+}

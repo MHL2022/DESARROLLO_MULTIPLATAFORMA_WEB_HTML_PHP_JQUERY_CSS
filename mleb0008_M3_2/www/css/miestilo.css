@@ -1,0 +1,284 @@
+
+html{
+	/*Fondo  Degradado*/
+
+	background-color: #2c2e59;
+
+	background: -webkit-gradient(linear, left top, left bottom, from(#2c2e59), to(#7c809e));
+	background: -moz-linear-gradient(top, #2c2e59, #7c809e);
+	background: linear-gradient(top, #2c2e59, #7c809e);
+
+	height: 200%;
+}
+
+#menu{
+
+	/*Posición y tamaño*/
+	margin: auto;
+	padding: 0px;
+	height: 28px;
+	width: 1600px;
+
+}
+
+#menu ul{                /*le quitamos los puntos de lista*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu ul li{
+	display: inline-block;   /*menu en bloque*/
+	
+}
+
+#menu ul li a{
+	color: #FFFFFF;         /*diseño del menu*/
+	display: block;
+	padding: 20px 80px;
+	font-weight:normal;
+	text-decoration: none;
+
+}
+
+
+#menu ul li a{                        /*degradado y sombreado del menu*/
+	
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	box-shadow: 1px 3px 5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 1px 3px 5px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 1px 3px 5px rgba(0,0,0,0.6);
+	background:-webkit-gradient(linear,left top,left bottom, from(#368AA9), to(#268CB2));
+	background:-webkit-linear-gradient(top, #368AA9, #268CB2);
+	background:-moz-linear-gradient(top, #368AA9, #268CB2);
+	background:-ms-linear-gradient(top, #368AA9, #268CB2);
+	background:-o-linear-gradient(top, #1d1f4c, #268CB2);
+	background:linear-gradient(top, #368AA9, #268CB2)
+	/*Sombra*/
+	-moz-box-shadow: 3px 3px 5px #666666;
+	-webkit-box-shadow:3px 3px 5px #666666;
+	box-shadow: 3px 3px 5px #666666;
+
+}
+
+#menu li a:hover{
+
+	/*Texto*/
+	color: red;
+	text-shadow: 2px 2px 10px orange;
+
+}
+/*Texto pagina de inicio*/
+.datos {
+	margin: 10px;
+	padding: 50px;
+	color: white;
+	text-align: justify;
+	position: relative;
+	left: 150px;
+
+}
+/*Texto pagina de productos*/
+.texto{
+	height: 5px;
+	width: 300px;
+	margin: 120px;
+	color: white;
+	text-align: justify;
+	position: relative;
+	left: 30px;
+	font-size: 25px;
+}
+
+#productos{
+
+	/*Posición y tamaño*/
+	margin: auto;
+	margin-top: 50px;
+
+	height: 1500px;
+	width: 1600px;
+
+
+}
+
+.producto{
+
+	/*Posición y tamaño*/
+	float: left;
+	position: relative;
+
+	width: 300px;
+	height: 300px;
+
+	margin: 40px;
+	padding: 0px;
+
+	/*Fondo*/
+	background-color: white;
+
+	/*Border*/
+	border: 1px solid #000000;
+
+	/*Texto*/
+	font-size: 30px;
+
+
+}
+
+.etiqueta{
+
+	/*Posición y tamaño*/
+	width:160px;
+	height: 40px; 
+
+	margin-top: 20px;
+	margin-left: -45px;
+
+	/*Border*/
+	border: 1px solid black;
+
+	/*Texto*/
+	text-align: center;
+
+	/*rotación*/
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+
+}
+
+.agotado{
+
+	/*Fondo*/
+	background-color: red;
+
+	/*Texto*/
+	color: white;
+}
+
+
+.novedad{
+
+	/*Fondo*/
+	background-color: yellow;
+
+	/*Texto*/
+	color: red;
+}
+
+.rebajado{
+
+	/*Fondo*/
+	background-color: green;
+
+	/*Texto*/
+	color: white;
+}
+
+.oferta{
+
+	/*Fondo*/
+	background-color: #bbd700;
+
+	/*Texto*/
+	color: black;
+}
+
+	/*Transformaciones*/
+.producto:hover>.etiqueta{
+
+	/*Transformación*/
+	-moz-transform: translate(100px,100px) rotate(-45deg);
+	-webkit-transform: translate(100px,100px) rotate(-45deg) scale(1.25);
+	-o-transform: translate(100px,100px) rotate(-45deg) scale(1.25);
+	transform: translate(100px,100px) rotate(-45deg) scale(1.25);
+}
+
+.producto:hover>.agotado{
+
+	color: red;
+	background-color: #ffce26;
+}
+
+.producto:hover>.novedad{
+
+	color: yellow;
+	background-color: #2b5f17;
+}
+
+.producto:hover>.rebajado{
+
+	color: green;
+	background-color: #d3e7cc;
+}
+
+.producto:hover>.oferta{
+
+	color: #bbd700;
+	background-color: #6a2c2c;
+}
+
+
+/*Aside de los productos*/
+.producto>aside{
+
+	/*Posición y tamaño*/
+	width: 294px;
+	height: 30px;
+
+    text-align: center;
+	margin: 0px;
+	padding: 3px;
+
+	position: absolute;
+	bottom: 0px;
+
+	/*Fondo*/
+	background-color: orange;
+
+	/*Border*/
+	border-top: 1px solid black;
+}
+
+.producto img{
+
+	width: 30px;
+	height: 30px;
+}
+
+.producto>aside>a:last-child{
+
+	position: relative;
+	left: 2px;
+
+}
+
+
+.producto span{
+
+	/*Texto*/
+	font-size: 20px;
+	color: black;
+	vertical-align: 40%;
+	
+}
+
+#numero{
+
+	padding-left: 2px;
+	padding-right: 2px;
+
+	background-color: white;
+
+	/*Border*/
+	border: 1px solid black;*/
+
+}
+
+
+

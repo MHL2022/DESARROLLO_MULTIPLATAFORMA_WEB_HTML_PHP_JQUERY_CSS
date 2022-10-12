@@ -1,0 +1,509 @@
+
+body{background-color: #FFFFFF; padding: 150px; font-family: Arial;}/*caracteristicas del body*/
+
+#menu{
+	background-color: #000; /*ponemos color negro al menu*/
+
+}
+
+#menu ul{                /*le quitamos los puntos de lista*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu ul li{
+	display: inline-block;   /*menu en bloque*/
+
+}
+
+#menu ul li a{
+	color: #FFFFFF;         /*diseño del menu*/
+	display: block;
+	padding: 20px 20px;
+	font-weight:normal;
+	text-decoration: none;
+}
+
+#menu ul li a:hover{
+	background-color: #DCE311;   /*atributo que hace que el menu cambie de color*/
+}
+
+.articulo{                /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG1.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+
+	
+
+}
+
+.articulo1{              /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG2.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+
+	
+}
+
+.articulo2{               /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG3.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+
+	
+}
+
+
+.articulo3{              /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG4.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+
+	
+} 
+
+.articulo4{         /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG5.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+
+	
+}
+
+.articulo5{            /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG6.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+
+	
+}
+
+.articulo6{              /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG7.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+
+	
+}
+
+
+.articulo7{               /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG8.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+
+
+} 
+
+.articulo8{              /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG9.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+	
+
+}
+
+.articulo9{                   /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG10.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+
+}
+
+.articulo10{              /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG11.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+	
+
+}
+
+
+.articulo11{            /*Diseño de la caja*/
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	float:left;
+	margin: 20px;
+	background: url(../imag/IMAG12.jpg)no-repeat center; /*añadimos la imagen, sin que se repita y la centramos*/
+
+} 
+/*diseño de la etiqueta, se repite 11 veces*/
+.vendido{                           
+	width: 50%;
+	color: white;
+	font-size: 30px;
+	border: 3px solid black;
+	background-color: red;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+    -moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+	
+}
+
+/* las etiquetas crecen un 25% del tamaño original 
+para destacar al usuario el valor de la misma, 
+hace un desplazamiento, cambia la tonalidad del texto y fondo de la misma.Se repite 11 veces.*/
+
+.vendido:hover{
+			transform: scale(3,3);
+			transform:rotate(-45deg);
+			width: 75%;
+			background-color: yellow;
+			width: 75%;
+			font-size: 40px;
+			color: red;
+		}
+
+
+
+
+
+
+
+.vendido1{
+	width: 50%;
+	color: red;
+	font-size: 30px;
+	border: 3px solid black;
+	background-color: yellow;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+    -moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+	
+}
+
+.vendido1:hover{
+			transform: scale(3,3);
+			transform:rotate(-45deg);
+			width: 75%;
+			background-color: green;
+			width: 75%;
+			font-size: 40px;
+			color: white;
+		}
+
+.vendido2{
+	width: 50%;
+	color: white;
+	font-size: 28px;
+	border: 3px solid black;
+	background-color: #1FA36A;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+
+}
+
+
+.vendido2:hover{
+			transform: scale(3,3);
+			transform:rotate(-45deg);
+			width: 75%;
+			background-color: blue;
+			width: 75%;
+			font-size: 40px;
+			color: red;
+		}
+
+.vendido3{
+	width: 50%;
+	color: black;
+	font-size: 30px;
+	border: 3px solid black;
+	background-color: #9CF247;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+
+}
+
+.vendido3:hover{
+			transform: scale(3,3);
+			transform:rotate(-45deg);
+			width: 75%;
+			background-color: yellow;
+			width: 75%;
+			font-size: 40px;
+			color: red;
+		}
+
+/*.vendido4{
+	width: 50%;
+	color: red;
+	font-size: 30px;
+	border: 3px solid red;
+	background-color: yellow;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+
+}*/
+
+/*.vendido5{
+	width: 50%;
+	color: red;
+	font-size: 30px;
+	border: 3px solid red;
+	background-color: yellow;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+
+}*/
+
+.vendido6{
+	width: 50%;
+	color: red;
+	font-size: 30px;
+	border: 3px solid black;
+	background-color: yellow;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+
+}
+.vendido6:hover{
+			transform: scale(3,3);
+			transform:rotate(-45deg);
+			width: 75%;
+			background-color: red;
+			width: 75%;
+			font-size: 40px;
+			color: white;
+		}
+/*.vendido7{
+	width: 50%;
+	color: red;
+	font-size: 30px;
+	border: 3px solid red;
+	background-color: yellow;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+
+}*/
+
+.vendido8{
+	width: 50%;
+	color: red;
+	font-size: 30px;
+	border: 3px solid black;
+	background-color: yellow;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+
+}
+
+.vendido8:hover{
+			transform: scale(3,3);
+			transform:rotate(-45deg);
+			width: 75%;
+			background-color:blue;
+			width: 75%;
+			font-size: 40px;
+			color: red;
+		}
+
+.vendido9{
+	width: 50%;
+	color: white;
+	font-size: 28px;
+	border: 3px solid black;
+	background-color: #1FA36A;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+
+}
+
+.vendido9:hover{
+			transform: scale(3,3);
+			transform:rotate(-45deg);
+			width: 75%;
+			background-color:purple;
+			width: 75%;
+			font-size: 40px;
+			color: white;
+		}
+
+.vendido10{
+	width: 50%;
+	color: black;
+	font-size: 30px;
+	border: 3px solid black;
+	background-color: #9CF247;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+
+}
+.vendido10:hover{
+			transform: scale(3,3);
+			transform:rotate(-45deg);
+			width: 75%;
+			background-color: red;
+			width: 75%;
+			font-size: 40px;
+			color: white;
+		}
+
+.vendido11{
+	width: 50%;
+	color: white;
+	font-size: 30px;
+	border: 3px solid black;
+	background-color: red;
+	text-align: center;
+	-moz-tranform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-moz-transform: translate(-55px, -25px) rotate(-45deg);
+    -webkit-transform: translate(-55px, -25px) rotate(-45deg);
+    -o-transform: translate(-55px, -25px) rotate(-45deg);
+    transform: translate(-55px, -25px) rotate(-45deg);
+
+}
+
+.vendido11:hover{
+			transform: scale(3,3);
+			transform:rotate(-45deg);
+			width: 75%;
+			background-color:yellow;
+			width: 75%;
+			font-size: 40px;
+			color: black;
+		}
+
+#datos {
+	
+	text-align: justify;
+	position: relative;
+	left: 50px;
+
+}

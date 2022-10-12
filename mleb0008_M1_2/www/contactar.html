@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Abrimos la etiqueta de la página -->
+<html lang="es">
+<!-- Definimos el head -->
+<head>
+	<title> Actividad 1_2_Obligatoria </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/miestilo.css">
+</head>
+<body>
+<header>
+</header>
+<nav id="menu_superior"><!-- menú de navegación superior -->
+	<ul>
+		<a href="index.html">INICIO</a>            |
+
+		<a href="audio.html">AUDIO</a>             |
+
+		<a href="videos.html">VÍDEOS</a>           | 
+
+		<a href="reflexiones.html">REFLEXIONES</a> |
+
+		<a href="contactar.html"><b>CONTACTAR</b></a>
+	</ul>
+</nav>
+<!-- Formulario para recogida de datos -->
+<form action="recogidadedatos1_2.php" method="post">
+	Introduce tu usuario:<br>
+	<input type="text" name="Usuario" value="Usuario" required autofocus placeholder="por ejemplo, Jony123"><br><br>
+	Introduce tu nombre:<br>
+	<input type="text" name="Nombre" value="Nombre" placeholder="por ejemplo, Maria López" required autofocus><br><br>
+	Introduce tu E-mail:<br>
+	<input type="text" name="Correo" value="Correo" placeholder="usuario@dominio" required autofocus><br><br>
+	Introduce tu teléfono (solo número y longitud 9)<br>
+	<input type="text" name="Teléfono" value="Teléfono" placeholder="9 números" autofocus pattern="[0-9]{9}"><br><br>
+	Introduce tu contraseña:<br>
+	<input type="password" name="pass" value="pass" placeholder="12 caracteres alfanumémricos"required autofocus pattern="[0-9 A-Z a-z]{12}"><br> <br>
+	Nombre Completo: <input type="text" name="nombre completo" value="nombre completo" placeholder="nombre completo"><br><br>
+	Número de actividad: <input type="text" name="Número de actividad" value="Número de actividad" placeholder="número de actividad"><br>
+	<!-- AHORA LAS VARIABLES OCULTAS -->
+	<input type="hidden" name="nombre completo" value="nombre completo"><br><br>
+	<input type="hidden" name="número de actividad" value="número de actividad">
+	<input type="submit" value="Enviar Datos">
+</form>
+
+<footer id="menu_inferior">
+<nav>	<!-- menú de navegación inferior -->
+	<ul>
+		<a href="index.html">Inicio</a>            |
+
+		<a href="audio.html">Audio</a>             |
+
+		<a href="videos.html">Vídeos</a>           | 
+
+		<a href="reflexiones.html">Reflexiones</a> |
+
+		<a href="contactar.html">Contactar</a>
+	</ul>
+</nav>
+</footer>
+</body>
+</html>

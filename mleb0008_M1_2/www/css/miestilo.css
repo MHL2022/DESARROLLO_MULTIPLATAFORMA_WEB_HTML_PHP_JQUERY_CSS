@@ -1,0 +1,14 @@
+
+/* quitamos el subrayado del menú de navegación superior e inferior y le ponemos color negro */
+a:link,a:visited{
+		text-decoration: none;
+		color: black;
+}
+/* centramos el menú de navegación superior y el menú de navegación inferior */
+footer {
+  text-align: center;
+}
+nav {
+  text-align: center;
+}
+

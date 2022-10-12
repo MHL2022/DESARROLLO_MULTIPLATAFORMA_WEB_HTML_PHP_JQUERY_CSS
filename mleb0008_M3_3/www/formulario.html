@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>actividad 3_3</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Definición de los archivos JS de forma local en nuestro servidor -->
+
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+
+    <!-- Fichero que se refiere a jQuery UI para poder usar sus diseños -->
+
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+
+    <!-- Añadimos la hoja de estilo de jQuery UI para poder usar sus diseños-->
+
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+
+    <!--Fichero donde tendremos nuestro script de jQuery-->
+    
+    <script type="text/javascript" src="js/miarchivojquery2.js"></script>
+    <!--Fichero donde tendremos nuestro script de estilo css-->
+     <link rel="stylesheet" type="text/css" href="css/miestilo2.css">
+
+        <!-- Definición de los archivos JS de forma remota 
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js"></script>
+
+    -->
+
+    <!-- Definición de los archivos JS de forma local en nuestro servidor -->
+
+   
+</head>
+
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="index2.html">Inicio</a>
+            </li>
+            <li><a href="#">Sección 1</a>
+                <ul>
+                    <li><a href="#">S1.Item 1</a>
+                    </li>
+                    <li><a href="#">S1.Item 2.</a>
+                    </li>
+                    <li><a href="#">S1.Item 3</a>
+                    </li>   
+                    <li><a href="#">S1.Item 4</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Sección 2</a>
+                <ul>
+                    <li><a href="#">S2.Item 1</a>
+                    </li>
+                    <li><a href="#">S2.Item 2</a>
+                    </li>
+                    <li><a href="#">S2.Item 3</a>
+                    </li>
+                    <li><a href="#">S2.Item 4</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Sección 3</a>
+                <ul>
+                    <li><a href="#">S3.Item 1</a>
+                    </li>
+                    <li><a href="#">S3.Item 2</a>
+                    </li>
+                    <li><a href="#">S3.Item 3</a>
+                    </li>
+                    <li><a href="#">S3.Item 4</a>
+                        <ul>
+                            <li><a href="#">I4.Parte 1</a>
+                            </li>
+                            <li><a href="#">I4.Parte 2</a>
+                            </li>
+                            <li><a href="#">I4.Parte 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">S3.Item 5</a>
+                    </li>
+                </ul>
+            </li>
+             <li><a href="formulario.html">Formulario</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <br> <br>  <br> <br>  <br> <br>
+<!--nombrfe y apellidos-->
+    <a id="camposdetextopost"></a>
+           
+<form action="recogidadedatos.php" method="post">
+                Introduce tu nombre<br>
+                <input type="text" name="nombre"><br><br>
+                Introduce tus apellidos<br>
+                <input type="text" name="edad"><br><br>
+             
+           
+           
+<br> <br>
+
+<!--edad en slider numérico-->
+<div style="width: 450px;">
+
+           
+              <label for="habitaciones">Introduce tu edad</label>
+              <select name="misHabitaciones" id="misHabitaciones">
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+                <option>32</option>
+                <option>33</option>
+                <option>34</option>
+                <option>35</option>
+                <option>36</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>30</option>
+                <option>31</option>
+                <option>32</option>
+                <option>33</option>
+                <option>34</option>
+                <option>35</option>
+                <option>36</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+                <option>43</option>
+                <option>44</option>
+                <option>45</option>
+                <option>46</option>
+                <option>47</option>
+                <option>48</option>
+                <option>49</option>
+                <option>50</option>
+                <option>51</option>
+                <option>52</option>
+                <option>53</option>
+                <option>54</option>
+                <option>55</option>
+                <option>56</option>
+                <option>57</option>
+                <option>58</option>
+                <option>59</option>
+                <option>60</option>
+                <option>61</option>
+                <option>62</option>
+                <option>63</option>
+                <option>64</option>
+                <option>65</option>
+                <option>66</option>
+                <option>67</option>
+                <option>68</option>
+                <option>69</option>
+                <option>70</option>
+              </select>
+             
+ </div>  
+
+ <br><br>
+ <!--pais-->
+<section>
+    <article>
+       <div class="ejemplo">
+         
+      
+            <label for="idioma">País</label>
+            <select name="idioma" id="idioma">
+              <option selected="selected">España</option>
+              <option>Francia</option>
+              <option >Italia</option>
+              <option>Holanda</option>
+              <option>Alemania</option>
+              <option>Portugal</option>
+              <option >Suecia</option>
+              <option>Argentina</option>
+              <option>México</option>
+            </select>
+            
+        
+        </div>
+    </articule>
+</section>
+
+ <br><br>
+
+<!--calendario-->
+<section>
+
+    <article>
+
+        <p>Fecha solicitada: <input type="text" id="miCalendario" name="miFecha"></p>
+         <input type="submit" value="Enviar Datos">
+ </form>
+    </article>
+
+</section>
+ <br><br>
+
+
+  <br><br>
+<!--barrade progreso-->
+<div style="width: 450px;">
+<div id="miBarraProgreso2">
+<div class="progress-label">enviando datos...</div>
+</div>
+</div>   
+
+</body>
+
+</html>

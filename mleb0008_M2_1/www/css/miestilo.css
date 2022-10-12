@@ -1,0 +1,133 @@
+
+/* quitamos el subrayado del menú de navegación superior e inferior y le ponemos color negro */
+a:link,a:visited{
+		text-decoration: none;
+		color: black;
+}
+/* centramos el menú de navegación superior y el menú de navegación inferior */
+footer {
+  text-align: center;
+}
+nav {
+  text-align: center;
+}
+/* diseño del menú superior */
+
+p{
+
+ text-align: left;
+ margin:200px;
+}
+/* colocamos la imagen de la navaja*/
+.estilo_div{
+	background: url(../imag/fondo_navaja2.png)no-repeat;
+	height:800px;
+	width:1000px;
+
+}
+
+/* tipo de letra que solo afectará al body, puesto que luego cambie la fuente en el menu y menu2*/
+body {
+	background-color:#EBE8E6; padding: 2px; font-family: Arial;
+}
+
+#menu ul{
+	list-style:none;
+	margin: 10px;
+	padding:10px;
+}
+
+#menu ul li {
+
+	display: inline-block;
+}
+
+#menu ul li a{
+	color: black;
+	margin: 10px;
+	padding:10px;
+	text-decoration: none;
+}
+
+#menu ul li a{
+	font-family: "Lobster", cursive;
+}
+/* cambio de color en el  menu al posar el raton sobre él*/
+#menu ul li a:hover{
+	background-color:#DFFF33 
+}
+/* ubicación de los menu*/
+#menu ul li a {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	position: relative;
+	left: 170px;
+	top: 30px;
+
+}
+
+#menu2 ul{
+	list-style:none;
+	margin: 10px;
+	padding:10px;
+}
+#menu2 ul li {
+
+	display: inline-block;
+}
+
+#menu2 ul li a{
+	color: black;
+	margin: 10px;
+	padding:10px;
+	text-decoration: none;
+}
+/* cambio de color en el  menu2 al posar el raton sobre él*/
+#menu2 ul li a:hover{
+	background-color:#DFFF33 
+}
+
+
+#menu2 ul li a {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	position: relative;
+	left: 300px;
+	top: 20px;
+
+}
+#menu2 ul li a{
+	font-family:"Lobster", cursive;
+}
+
+/* ubicación de la imagen de la brocha*/
+#brocha {
+	
+	vertical-align: top;
+	position: relative;
+	left: 700px;
+	bottom: 130px;
+	
+}
+/* Transformación de la imagen de la brocha, usé translate*/
+#brocha:hover {
+	transform: translate(30px);
+	transform-origin: center center;
+
+
+}
+
+
+/* ubicación de los datos del menú*/
+
+#datos {
+	width: 1000px;
+	height: 800px;
+	vertical-align: top;
+	position: relative;
+	left: 10px;
+	bottom: 300px;
+
+}

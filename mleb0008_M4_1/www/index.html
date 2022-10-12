@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>		
+
+	<meta charset="utf-8" />	
+
+	<title>Actividad 4_1</title>
+
+
+	<!-- Definición de los archivos JS y CSS de forma local en nuestro servidor -->
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.3.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/miArchivo.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+</head>
+
+<body>
+	<!--div con menu desplegable que alberga contenido ene la sección de Inicio-->
+	
+	<section id="inicio" data-role="page">
+		<header data-role="header"  data-theme="a">
+			<h1>Tu web del motor</h1>
+		</header>
+		
+		<div id="imagenempresa">
+			<img id="coche" src="img/deportivo.png" />
+		</div>
+		<div id=desplegables>
+		<div id="oferta" data-role="collapsible" >
+		    <h3>Productos en Oferta</h3>
+			    <ul data-role="listview" data-inset="true">
+			
+				<li>
+					<img src="img/rueda.png">
+					<h3>Oferta en Ruedas</h3>
+					<p>4 al precio de 2</p>  
+				</li>
+				<li>
+					<img src="img/funda.jpg">
+					<h3>Funda Reversible</h3>
+					<p>Si llevas 2, tienes un 20% de descuento.</p>  
+				</li>
+				<li>
+					<img src="img/espejo.jpg">
+					<h3>Espejos Laterales</h3>
+					<p>2x1</p>  
+				</li>
+				
+			</ul>
+		</div>
+		<div id="novedades" data-role="collapsible">
+		    <h3>Últimas Novedades</h3>
+		    <p>Tu Web del Motor desea comunicarles que ha sido habilitada una área exclusiva para los clientes de esta empresa. </p> 
+		    <p>En ella estarán disponibles documentos, imágenes, manuales técnicos de montaje, tarifas de precios y así como comunicados de la empresa.</p>
+		</div>
+		
+		<div id="usuarios"data-role="collapsible">
+		    <h3>Usuarios Conectados</h3>
+		   <ul data-role="listview" data-inset="true">
+			
+				<li>
+					<img src="img/marco.jpg">
+					<h3>Marco Camacho Gutierrez</h3>
+					<p>@marcocg</p>  
+				</li>
+				<li>
+					<img src="img/maria.jpg">
+					<h3>Maria Ledesma</h3>
+					<p>@marialedesma</p>  
+				</li>
+				<li>
+					<img src="img/victor.jpg">
+					<h3>Victor Hugo Villanueva</h3>
+					<p>@victor_1976</p>  
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+		<footer data-role="footer" data-id="menuInferior" data-position="fixed" data-theme="a">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#inicio" class="ui-btn-active ui-state-persist" data-icon="home">Inicio</a></li>
+					<li><a href="#productos" data-icon="shop">Productos</a></li>
+					<li><a href="#empresa" data-icon="info">Empresa</a></li>
+					<li><a href="#contactar" data-icon="mail">Contactar</a></li>
+					
+				</ul>
+			</nav>
+		</footer><!-- /footer -->
+
+	</section><!-- /page -->
+	<!--div con menu desplegable que alberga contenido en la sección de Productos-->
+	
+			
+	<section id="productos" data-role="page">
+		<header data-role="header"  data-theme="a">
+			<h1>Tu web del motor</h1>
+		</header>
+		<div id="imagenempresa">
+			<img id="coche" src="img/deportivo.png" />
+		</div>
+		
+		<footer data-role="footer" data-id="menuInferior" data-position="fixed" data-theme="a">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#inicio"  data-icon="home">Inicio</a></li>
+					<li><a href="#productos"class="ui-btn-active ui-state-persist" data-icon="shop">Productos</a></li>
+					<li><a href="#empresa" data-icon="info">Empresa</a></li>
+					<li><a href="#contactar" data-icon="mail">Contactar</a></li>
+					
+				</ul>
+			</nav>
+		</footer><!-- /footer -->
+
+	</section><!-- /page -->
+	
+
+
+	<!--div con menu desplegable que alberga contenido en la sección de empresa-->		
+		
+
+
+	<section id="empresa" data-role="page">
+		<header data-role="header"  data-theme="a">
+			<h1>Tu web del motor</h1>
+		</header>
+		<div id="imagenempresa">
+			<img id="coche" src="img/deportivo.png" />
+		</div>
+		
+		<footer data-role="footer" data-id="menuInferior" data-position="fixed" data-theme="a">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#inicio"  data-icon="home">Inicio</a></li>
+					<li><a href="#productos" data-icon="shop">Productos</a></li>
+					<li><a href="#empresa" class="ui-btn-active ui-state-persist" data-icon="info">Empresa</a></li>
+					<li><a href="#contactar" data-icon="mail">Contactar</a></li>
+					
+				</ul>
+			</nav>
+		</footer><!-- /footer -->
+
+	</section><!-- /page -->
+
+
+	<!--div con menu desplegable que alberga contenidoen la sección contactar-->		
+		
+<section id="contactar" data-role="page">
+		<header data-role="header"  data-theme="a">
+			<h1>Tu web del motor</h1>
+		</header>
+		<div id="imagenempresa">
+			<img id="coche" src="img/deportivo.png" />
+		</div>
+		
+		<footer data-role="footer" data-id="menuInferior" data-position="fixed" data-theme="a">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#inicio"  data-icon="home">Inicio</a></li>
+					<li><a href="#productos" data-icon="shop">Productos</a></li>
+					<li><a href="#empresa" data-icon="info">Empresa</a></li>
+					<li><a href="#contactar"class="ui-btn-active ui-state-persist" data-icon="mail">Contactar</a></li>
+					
+				</ul>
+			</nav>
+		</footer><!-- /footer -->
+
+	</section><!-- /page -->
+	
+		
+	
+		
+
+</body>
+</html>
+
+

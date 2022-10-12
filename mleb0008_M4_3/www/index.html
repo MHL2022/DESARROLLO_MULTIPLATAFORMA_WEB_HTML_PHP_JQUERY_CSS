@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>		
+
+	<meta charset="utf-8" />	
+
+	<title>Actividad 4_3</title>
+
+
+	<!-- Definición de los archivos JS y CSS de forma local en nuestro servidor -->
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.3.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="css/miestilo.css">
+
+	
+		
+		
+
+</head>
+
+<body>
+	<!--div con menu desplegable que alberga contenido-->	
+	<section id="inicio" data-role="page">
+		<header data-role="header"  data-theme="a">
+			<h1>Tu web del motor</h1>
+		</header>
+		<div id="imagenempresa">
+			<img id="coche" src="img/deportivo.png" />
+		</div>
+
+		<div id="oferta" data-role="collapsible" >
+		    <h3>Productos en Oferta</h3>
+			    <ul data-role="listview" data-inset="true">
+			
+				<li>
+					<img src="img/rueda.png">
+					<h3>Oferta en Ruedas</h3>
+					<p>4 al precio de 2</p>  
+				</li>
+				<li>
+					<img src="img/funda.jpg">
+					<h3>Funda Reversible</h3>
+					<p>Si llevas 2, tienes un 20% de descuento.</p>  
+				</li>
+				<li>
+					<img src="img/espejo.jpg">
+					<h3>Espejos Laterales</h3>
+					<p>2x1</p>  
+				</li>
+				
+			</ul>
+		</div>
+		<div id="novedades" data-role="collapsible">
+		    <h3>Últimas Novedades</h3>
+		    <p>Tu Web del Motor desea comunicarles que ha sido habilitada una área exclusiva para los clientes de esta empresa. </p> 
+		    <p>En ella estarán disponibles documentos, imágenes, manuales técnicos de montaje, tarifas de precios y así como comunicados de la empresa.</p>
+		</div>
+		
+		<div id="usuarios"data-role="collapsible">
+		    <h3>Usuarios Conectados</h3>
+		   <ul data-role="listview" data-inset="true">
+			
+				<li>
+					<img src="img/marco.jpg">
+					<h3>Marco Camacho Gutierrez</h3>
+					<p>@marcocg</p>  
+				</li>
+				<li>
+					<img src="img/maria.jpg">
+					<h3>Maria Ledesma</h3>
+					<p>@marialedesma</p>  
+				</li>
+				<li>
+					<img src="img/victor.jpg">
+					<h3>Victor Hugo Villanueva</h3>
+					<p>@victor_1976</p>  
+				</li>
+				
+			</ul>
+		</div>
+
+		<!--PIE DE PÁGINA/FOOTER-->
+
+		<footer data-role="footer" data-id="menuInferior" data-position="fixed" data-theme="a">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#inicio" class="ui-btn-active ui-state-persist" data-icon="home">Inicio</a></li>
+					<li><a href="#productos" data-icon="shop">Productos</a></li>
+					<li><a href="#empresa" data-icon="info">Empresa</a></li>
+					<li><a href="#contactar" data-icon="mail">Contactar</a></li>
+					
+				</ul>
+			</nav>
+		</footer><!-- /footer -->
+
+	</section><!-- /page -->
+	
+
+
+	<!--SECCIÓN DE PRODUCTOS-->
+	
+			
+<section id="productos" data-role="page">
+		<header data-role="header"  data-theme="a">
+			<h1>Tu web del motor</h1>
+		</header>
+		<div id="imagenempresa">
+			<img id="coche" src="img/deportivo.png" />
+		</div>
+<!--productos-->
+		<div id="ventas">
+
+			<div class="producto uno">
+			<div class="etiqueta agotado">AGOTADO</div>
+			<aside>
+				<a href="#"><img src="img/facebook.png"></a>
+				<a href="#"><img src="img/twitter.png"></a>
+				<span>Unidades:</span>
+				<span id="numero">0</span>
+				<a href="#"><img src="img/carrito.png"></a>
+			</aside>
+		</div>
+		<div class="producto dos">
+			<div class="etiqueta novedad">NOVEDAD</div>
+			<aside>
+				<a href="#"><img src="img/facebook.png"></a>
+				<a href="#"><img src="img/twitter.png"></a>
+				<span>Unidades:</span>
+				<span id="numero">4</span>
+				<a href="#"><img src="img/carrito.png"></a>
+			</aside>
+		</div>
+		<div class="producto tres">
+			<div class="etiqueta rebajado">REBAJADO</div>
+			<aside>
+				<a href="#"><img src="img/facebook.png"></a>
+				<a href="#"><img src="img/twitter.png"></a>
+				<span>Unidades:</span>
+				<span id="numero">6</span>
+				<a href="#"><img src="img/carrito.png"></a>
+			</aside>
+		</div>
+		<div class="producto cuatro">
+			<div class="etiqueta oferta">OFERTA</div>
+			<aside>
+				<a href="#"><img src="img/facebook.png"></a>
+				<a href="#"><img src="img/twitter.png"></a>
+				<span>Unidades:</span>
+				<span id="numero">2</span>
+				<a href="#"><img src="img/carrito.png"></a>
+			</aside>
+		</div>
+
+
+
+		</div>
+<!--PIE DE PÁGINA/FOOTER-->
+
+		<footer data-role="footer" data-id="menuInferior" data-position="fixed" data-theme="a">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#inicio"  data-icon="home">Inicio</a></li>
+					<li><a href="#productos"class="ui-btn-active ui-state-persist" data-icon="shop">Productos</a></li>
+					<li><a href="#empresa" data-icon="info">Empresa</a></li>
+					<li><a href="#contactar" data-icon="mail">Contactar</a></li>
+					
+				</ul>
+			</nav>
+		</footer><!-- /footer -->
+
+</section><!-- /page -->
+	
+			<!--SECCIÓN DE PRODUCTOS / DESPLEGABLE CON TEXTO E IMÁGENES-->
+
+
+<section id="empresa" data-role="page">
+		<header data-role="header"  data-theme="a">
+			<h1>Tu web del motor</h1>
+		</header>
+		<div id="imagenempresa">
+			<img id="coche" src="img/deportivo.png" />
+		</div>
+
+		<div id="historia" data-role="collapsible">
+		    <h3>Historia</h3>
+		    <p>Desde el comienzo de nuestras actividades, nos especializamos en el suministro de productos y equipos  relacionados a la mecanica del automóvil.
+			Participamos en los principales proyectos de las obras mencionadas tanto en nuestro país como en países limítrofes.</p>
+
+			<p>Con el transcurso de los años, hemos incorporado nuevas líneas de productos con el objetivo de proveer a nuestros clientes una solución integral a sus necesidades. Contamos con un excelente grupo humano el cual se capacita en forma permanente a fin de estar actualizado en los cambios e innovaciones tecnológicas que se presentan en nuestro ambito.</p>
+
+			<p>Nuestro objetivo principal es lograr una permanente mejora en nuestras actividades a fin de dar un servicio que asegure una entrega en tiempo y forma con su correspondiente asesoramiento, soporte técnico y su posterior servicio post-venta. La cumplimentación de las pautas mencionadas nos obligan a un estricto cumplimiento de nuestro manual de garantía de calidad y procedimientos a fin de lograr como meta final una satisfacción plena de nuestros clientes.</p>
+
+			<p>Es importante señalar además, que nuestros servicios están fortalecidos por contar con un stock permanente de los principales productos de nuestra comercialización.</p>
+
+			<p>Estamos orgullosos de informar que desde el pasado 19 de Diciembre del 2006, el sistema de gestion de calidad de FLOUSA SA ha sido certificado segun la norma IRAM-ISO 9001: 2000 y revalidado el mismo el pasado día 28 de Diciembre de 2009 según IRAM 9001:2008.</p>
+		</div>
+
+		<div id="somos" data-role="collapsible" >
+		    <h3>¿Quiénes somos?</h3>
+			    <ul data-role="listview" data-inset="true">
+			
+				<div id="woman">
+					<img id="mujer1"src="img/mujer1.jpg">
+					<img id="mujer2"src="img/mujer2.jpg"><br>
+					<img id="mujer3"src="img/mujer3.jpg">
+					<img id="mujer4"src="img/mujer4.jpg">
+				</div>
+			
+			</ul>
+		</div>
+		
+	
+		<div id="estamos"data-role="collapsible">
+		    <h3>¿Dónde estamos?</h3>
+		   <div id="localizacion">
+		   	<p>Delegación de Málaga</p>
+		   	<p>Calle Cuevas Bajas Nº12</p>
+		   	<p>29004 - Málaga</p>
+		   </div>
+			<div id="imagenmapa">
+			<img id="mapa"src="img/localización.png">	
+			</div>
+		</div>
+
+		<!--PIE DE PÁGINA/FOOTER-->
+		<footer data-role="footer" data-id="menuInferior" data-position="fixed" data-theme="a">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#inicio"  data-icon="home">Inicio</a></li>
+					<li><a href="#productos" data-icon="shop">Productos</a></li>
+					<li><a href="#empresa" class="ui-btn-active ui-state-persist" data-icon="info">Empresa</a></li>
+					<li><a href="#contactar" data-icon="mail">Contactar</a></li>
+					
+				</ul>
+			</nav>
+		</footer><!-- /footer -->
+
+</section><!-- /page -->
+	<!--div con menu desplegable que alberga contenido-->		
+		
+<section id="contactar" data-role="page">
+		<header data-role="header"  data-theme="a">
+			<h1>Tu web del motor</h1>
+		</header>
+		<div id="imagenempresa">
+			<img id="coche" src="img/deportivo.png" />
+		</div>
+			<div id="telefono" data-role="collapsible">
+		    <h3>Teléfono</h3>
+		     <ul data-role="listview" data-inset="true">
+			
+				<div id="fono">
+					<p>Tlf. Información: (+34) 123 345 678</p>
+		   			<p>Tlf. Soporte: (+34) 123 345 678</p>
+		   			<p>Fax: (+34) 123 345 678</p>
+				</div>
+			</ul>
+		</div>
+
+		<div id="skype" data-role="collapsible" >
+		    <h3>Skype</h3>
+			    <ul data-role="listview" data-inset="true">
+			
+				<div id="online">
+					<li><a href="https://www.skype.com/es/" target="_blank">empresa.conecta.online</a></li>
+		   			<li><a href="https://www.skype.com/es/" target="_blank">soporte.conecta.online</a></li>
+				</div>
+			
+			</ul>
+		</div>
+		
+	
+		<div id="redessociales"data-role="collapsible">
+		    <h3>Redes Sociales</h3>
+		    <ul data-role = "listview" data-inset="true">
+		    <div id="redesvarias">
+		   
+				<li><a href="https://www.facebook.com/login/" target="_blank">Facebook</a></li>
+			   	<li><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
+			   	<li><a href="https://es.linkedin.com/" target="_blank">LinkedIn</a></li>		
+			
+			</div>
+		</ul>
+		</div>
+
+		<div id="email"data-role="collapsible">
+		    <h3>Email</h3>
+		   <div id="departamentosmail">
+			   	<a href="mailto:marialedesma2020@yahoo.com">Dpto. Compras Internacional</a></p>
+			   	<a href="mailto:mariadelhuertoes@yahoo.es">Dpto. Atención al Cliente</a></p>
+			   	<a href="mariamercedesdelhuerto@gmail.com">Dpto. Soporte Técnico</a></p>
+			   	<a href="viatsat@gmail.com">Dpto. Recursos Humanos</a></p>
+		   </div>
+			
+		</div>
+
+		<div id="formulario"data-role="collapsible">
+		    <h3>Formulario</h3>
+		   <form method="post" name="formularioContactar" action="enviar.php" id="formularioContactar" >
+
+			<label for="nombreContactar">Introduce tu nombre</label>
+			<input type="text" name="nombreContactar" id="nombreContactar" placeholder="Introduce tu nombre" required>
+
+			<label for="apellidosContactar">Introduce tus apellidos</label>
+			<input type="text" name="apellidosContactar" id="apellidosContactar" placeholder="Introduce tus apellidos" required>
+
+			<label for="mailContactar">Introduce tu email</label>
+			<input type="email" name="mailContactar" id="mailContactar" placeholder="Introduce tu email" required>
+
+			<label for="comentariosContactar">Comentarios</label>
+			<textarea cols="40" rows="10" name="comentariosContactar" id="comentariosContactar" placeholder="Comentarios" required></textarea>
+
+			<input type="submit" name="btnEnviar" id="btnEnviar" value="ENVIAR FORMULARIO">
+			<input type="reset" name="btnreset" value="Restaurar valores por defecto"/>
+
+		</form>
+				
+		</div>
+
+		<!--PIE DE PÁGINA/FOOTER-->
+		
+		<footer data-role="footer" data-id="menuInferior" data-position="fixed" data-theme="a">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#inicio"  data-icon="home">Inicio</a></li>
+					<li><a href="#productos" data-icon="shop">Productos</a></li>
+					<li><a href="#empresa" data-icon="info">Empresa</a></li>
+					<li><a href="#contactar"class="ui-btn-active ui-state-persist" data-icon="mail">Contactar</a></li>
+					
+				</ul>
+			</nav>
+		</footer><!-- /footer -->
+
+</section><!-- /page -->
+	<!--div con menu desplegable que alberga contenido-->		
+		
+	
+		
+
+</body>
+</html>
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<style>
+#cajareceptora1 {width:160px;height:100px;padding:10px;border:1px solid #aaaaaa; float: left;}
+#cajareceptora2 {width:160px;height:100px;padding:10px;border:1px solid #aaaaaa; float: left;}
+</style>
+<script>
+
+function allowDrop(ev)
+{
+	ev.preventDefault();
+}
+
+function drag(ev)
+{
+	ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+	ev.preventDefault();
+	var data=ev.dataTransfer.getData("Text");
+	ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Arrastra cada imagen a un recuadro:</p>
+
+<div id="cajareceptora1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="cajareceptora2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="elementomovil1" src="images/logo_html5.png" draggable="true" ondragstart="drag(event)" width="150" height="92">
+<img id="elementomovil2" src="images/logo_css3.png" draggable="true" ondragstart="drag(event)"  width="150" height="92">
+
+
+</body>
+</html>

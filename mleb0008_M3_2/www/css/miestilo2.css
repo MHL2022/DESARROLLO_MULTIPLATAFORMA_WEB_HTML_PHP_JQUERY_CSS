@@ -1,0 +1,158 @@
+html{
+
+	/*Fondo  Degradado*/
+
+	background-color:white;
+
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#2c2e59), to(#7c809e));
+	background: -moz-linear-gradient(top, #2c2e59, #7c809e);
+	background: linear-gradient(top, #2c2e59, #7c809e);*/
+
+	height: 100%;
+}
+/*estilo del encabezado*/
+#encabezado{
+	background-color:black;
+	color: white;
+	text-align: center;
+	width: 1905px;
+	height: 50px;
+	font-size: 30pt;
+	margin-left: none;
+
+}
+
+
+
+
+/*Navegación */
+#menu{
+
+	/*Posición y tamaño*/
+	margin: auto;
+	padding: 0px;
+	height: 28px;
+	width: 740px;
+
+	/*Fondo  Degradado*/
+	background-color:black;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0,#414444), color-stop(0.5, #121919), color-stop(0.51,#1A1B1B),color-stop(1, #6D7676));
+	background: -moz-linear-gradient(top, #414444 0%,  #121919 50%, #1A1B1B 51%, #6D7676 100%);
+	background: linear-gradient(top, #414444  0%, #121919 50%, #1A1B1B 51%, #6D7676 100%);
+
+	/*Borde*/	
+	border: 2px outset #999999;
+
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+
+	/*Sombra*/
+	-moz-box-shadow: 3px 3px 5px #666666;
+	-webkit-box-shadow:3px 3px 5px #666666;
+	box-shadow: 3px 3px 5px #666666;
+
+}
+
+#menu ul{
+
+	/*Posición y tamaño*/
+	margin-left: 4px;
+	margin-top: 0px;
+	padding: 0;
+
+	/*simbolos de la lista*/
+	list-style-type: none;
+
+}
+
+#menu li{
+
+	/*Posición y tamaño*/
+	display: block;
+	position: relative;
+	float: left;
+
+	margin: 0px;
+	padding: 0px;
+
+	height: 27px;
+	width: 120px;
+
+	/*Borde*/
+	border: 1px outset #999999;
+
+}
+
+#menu li:first-child{
+
+	/*Borde*/
+	border-left: 0px none;
+
+}
+
+#menu li:last-child{
+
+	/*Borde*/
+	border-right: 0px none;
+
+}
+
+#menu li a{
+
+	/*Posición y tamaño*/
+	display: block;
+	height: 19px;
+	width: 120px;
+	padding-top: 6px;
+
+	/*Texto*/
+	font-family: "arial";
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+
+}
+
+#menu li a:hover{
+
+	/*Texto*/
+	color: #C6D356;
+	text-shadow: 2px 2px 10px orange;
+
+}
+
+/*Datos de la pagina INICIO*/
+#datos{
+
+	/*Posición y tamaño*/
+	padding-top: 80px;
+	padding-left: 120px;
+
+	/*Texto*/
+	font-family: "arial";
+	color: #414444;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

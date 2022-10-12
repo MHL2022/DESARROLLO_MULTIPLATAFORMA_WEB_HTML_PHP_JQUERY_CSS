@@ -1,0 +1,292 @@
+
+/* ======== SELECTORES DE ID ========== */
+
+#imagenempresa {
+    position: relative;
+    margin: 0px;
+    text-align: center;
+}
+
+#desplegables {
+    position: relative;
+    margin: 0px;
+}
+
+#coche {
+
+    width: 80%;
+
+}
+
+#ventas{
+
+	/*Posición y tamaño*/
+	margin: auto;
+	margin-top: 50px;
+
+
+}
+
+#numero{
+
+	padding-left: 2px;
+	padding-right: 2px;
+
+	background-color: white;
+
+	/*Border*/
+	border: 1px solid black;*/
+
+}
+
+#articulos {
+	position: relative;
+    margin: 0px;
+}
+
+#mujer1 {
+	width: 300px;
+	height:500px;
+}
+#mujer2 {
+	width: 300px;
+	height:500px;
+}
+#mujer3 {
+	width: 300px;
+	height:500px;
+}
+#mujer4 {
+	width: 300px;
+	height:500px;
+}
+
+#localizacion {
+	text-align: center;
+}
+
+#woman {
+	position: relative;
+    margin: 0px;
+    text-align: center;
+}
+
+#imagenmapa {
+	position: relative;
+    margin: 0px;
+    text-align: center;
+
+}
+
+#mapa {
+	
+	width: 85%;
+	
+}
+/* Color y posición para los h1 usados únicamente en el título de la página */
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+
+
+/* ======== SELECTORES DE ELEMENTO ========== */
+
+
+
+
+/* ======== SELECTORES DE CLASE ========== */
+.producto{
+	position: relative;
+    margin: 0px;
+
+}
+.producto{
+
+	/*Posición y tamaño*/
+	float: left;
+	position: relative;
+
+	width: 300px;
+	height: 300px;
+
+	margin: 40px;
+	padding: 0px;
+
+	/*Fondo*/
+	background-color: white;
+
+	/*Border*/
+	border: 1px solid #000000;
+
+	/*Texto*/
+	font-size: 30px;
+
+
+}
+
+.etiqueta{
+
+	/*Posición y tamaño*/
+	width:160px;
+	height: 40px; 
+
+	margin-top: 20px;
+	margin-left: -45px;
+
+	/*Border*/
+	border: 1px solid black;
+
+	/*Texto*/
+	text-align: center;
+
+	/*rotación*/
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+
+}
+
+.agotado{
+
+	/*Fondo*/
+	background-color: red;
+
+	/*Texto*/
+	color: white;
+}
+
+
+.novedad{
+
+	/*Fondo*/
+	background-color: yellow;
+
+	/*Texto*/
+	color: red;
+}
+
+.rebajado{
+
+	/*Fondo*/
+	background-color: green;
+
+	/*Texto*/
+	color: white;
+}
+
+.oferta{
+
+	/*Fondo*/
+	background-color: #bbd700;
+
+	/*Texto*/
+	color: black;
+}
+
+	/*Transformaciones*/
+.producto:hover>.etiqueta{
+
+	/*Transformación*/
+	-moz-transform: translate(100px,100px) rotate(-45deg);
+	-webkit-transform: translate(100px,100px) rotate(-45deg) scale(1.25);
+	-o-transform: translate(100px,100px) rotate(-45deg) scale(1.25);
+	transform: translate(100px,100px) rotate(-45deg) scale(1.25);
+}
+
+.producto:hover>.agotado{
+
+	color: red;
+	background-color: #ffce26;
+}
+
+.producto:hover>.novedad{
+
+	color: yellow;
+	background-color: #2b5f17;
+}
+
+.producto:hover>.rebajado{
+
+	color: green;
+	background-color: #d3e7cc;
+}
+
+.producto:hover>.oferta{
+
+	color: #bbd700;
+	background-color: #6a2c2c;
+}
+
+
+/*Aside de los productos*/
+.producto>aside{
+
+	/*Posición y tamaño*/
+	width: 294px;
+	height: 30px;
+
+    text-align: center;
+	margin: 0px;
+	padding: 3px;
+
+	position: absolute;
+	bottom: 0px;
+
+	/*Fondo*/
+	background-color: orange;
+
+	/*Border*/
+	border-top: 1px solid black;
+}
+
+.producto img{
+
+	width: 30px;
+	height: 30px;
+}
+
+.producto>aside>a:last-child{
+
+	position: relative;
+	left: 2px;
+
+}
+
+
+.producto span{
+
+	/*Texto*/
+	font-size: 20px;
+	color: black;
+	vertical-align: 40%;
+	
+}
+
+.uno {
+	background: url(../img/rueda.png)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+	background-size: 150px 150px;
+}
+
+
+.dos {
+	background: url(../img/espejo.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+	background-size: 150px 150px;
+}
+
+.tres {
+	background: url(../img/funda.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+	background-size: 180px 180px;
+}
+
+.cuatro {
+	background: url(../img/limpia.jpg)no-repeat center;/*añadimos la imagen, sin que se repita y la centramos*/
+	background-size: 180px 180px;
+}
+
+
+
+
+

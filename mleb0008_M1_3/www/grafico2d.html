@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!-- Abrimos la etiqueta de la página -->
+<html lang="es">
+<!-- Definimos el head -->
+<head>
+	<title> Actividad 1_3_Obligatoria </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/miestilo.css">
+<style>
+	
+	#milienzo{
+		background-color:#25F4F4;
+	}
+	section{
+		width:1000px;
+		position:relative;
+		margin:auto;
+	}
+     
+</style>
+
+<script type ="text/javascript">
+//añadimos 4 imágenes:
+//1º debemos agregar dentro del body el <canvas …> y la imagen oculta <img..
+//2º Posteriormente en el head dentro del script <script… nos declaramos
+//una función que será la que cargue la imagen a nuestro canvas mediante JavaScript
+//Nos declaramos una variable que contendrá la imagen para poder procesarla
+//var img = new Image();
+//Enlazamos nuestra variable con la ruta donde está la imagen
+//Img.src = 'ruta_imagen.extension_imagen.png'
+//3º Agregamos en el inicio del body la función
+
+function midiseño(){
+	var canvas = document.getElementById("milienzo");
+	var contexto = canvas.getContext("2d");
+
+	var img = new Image();
+	img.src = 'imag/MARIA_CON FONDO.jpg'
+	contexto.drawImage(img,800,450);
+
+	var img = new Image();
+	contexto.scale(0.25,0.25);
+	img.src = 'imag/aguacate.png'
+	contexto.drawImage(img,560,2300);
+
+	var img = new Image();
+	img.src = 'imag/manzana.png'
+	contexto.drawImage(img,100,2300);
+
+	var img = new Image();
+	img.src = 'imag/limon.png'
+	contexto.scale(2,2);
+	contexto.drawImage(img,500,1150);
+
+}
+
+</script>
+</head>
+<body onload="midiseño()">
+<header>
+</header>
+<nav id="menu_superior"><!-- menú de navegación superior -->
+	<ul>
+		<a href="index.html">INICIO</a>                      |
+
+		<a href="tren.html">TREN</a>                         |
+ 
+		<a href="grafico2d.html"><b><i>GRÁFICO2D</b></i></a> | 
+
+		<a href="localizacion.html">LOCALIZACIÓN</a>         |
+
+		<a href="almacenamiento.html">ALMACENAMIENTO</a>
+	</ul>
+</nav>
+<br><br>
+<section id="dibujo">
+<canvas id="milienzo" width="1000" height="700" style="border:10px solid #99D92A">
+
+Hemos detectado que tu navegador no soporta la etiqueta canvas, le recomendamos que actualice la versión de su navegador para disfrutar totalmente de ésta web.
+</canvas>
+<script type="text/javascript">
+//Preparamos el lienzo y el contexto donde vamos a dibujar
+var canvas = document.getElementById("milienzo");
+var contexto = canvas.getContext("2d");
+		contexto.strokeStyle = "#D92A99";
+
+		contexto.beginPath();
+		contexto.moveTo(100,400);
+		contexto.stroke();
+		contexto.lineWidth= 30;
+		contexto.lineJoin= "miter";
+		contexto.lineTo(200,250);
+		contexto.lineTo(300,400);
+		contexto.stroke();
+
+//rectángulo de la casita.
+		contexto.strokeStyle = "#D92A99";
+		contexto.strokeRect(175,350,50,100);
+
+//marco de la imágen
+		contexto.lineWidth= 13;
+		contexto.strokeStyle = "#EE8E33";
+		contexto.strokeRect(793,445,120,180);
+
+		
+		
+//Trazamos formas geométricas (circulo) con la función: arc(x, y, radio, anguloInicial, anguloFinal, sentidoInverso)#F4F425
+//copos de nieve:
+		//Preparamos el lienzo y el contexto donde vamos a dibujar
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		//Definimos un tamaño para la línea
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#FFFFFF";
+		contexto.beginPath();
+		//Definimos nuestro círculo
+		contexto.arc(500,200,5,0,2*Math.PI, true);
+
+		//Añadimos Tinta al trazo
+		contexto.stroke();
+
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#FFFFFF";
+		contexto.beginPath();
+		contexto.arc(100,200,5,0,2*Math.PI, true);
+		contexto.stroke();
+
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#FFFFFF";
+		contexto.beginPath();
+		contexto.arc(800,200,5,0,2*Math.PI, true);
+		contexto.stroke();
+
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#FFFFFF";
+		contexto.beginPath();
+		contexto.arc(900,300,5,0,2*Math.PI, true);
+		contexto.stroke();
+
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#FFFFFF";
+		contexto.beginPath();
+		contexto.arc(300,300,5,0,2*Math.PI, true);
+		contexto.stroke();
+
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#FFFFFF";
+		contexto.beginPath();
+		contexto.arc(600,300,5,0,2*Math.PI, true);
+		contexto.stroke();
+//dibujo del sol
+
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#F4F425";
+		contexto.fillStyle = "#F4F425";
+		contexto.beginPath();
+		contexto.arc(100,100,35,0,2*Math.PI, true);
+		contexto.fill();
+		contexto.stroke();
+//Dibujo de la muñeca
+	   
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#25F4F4";
+		contexto.fillStyle = "#EDE277";
+		contexto.arc(500,300,50,0,2*Math.PI, true);
+		contexto.fill();
+		contexto.stroke();
+
+		
+
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.beginPath();
+		contexto.strokeStyle = "#9F39F8";
+
+		contexto.beginPath();
+		contexto.moveTo(400,800);
+		contexto.stroke();
+		contexto.moveTo(400,700);
+		contexto.lineWidth= 30;
+		contexto.lineJoin= "miter";
+		contexto.lineTo(500,550);
+		contexto.lineTo(600,700);
+		contexto.lineCap= "round"
+		contexto.stroke();
+		
+		contexto.beginPath();
+		contexto.moveTo(400,400);
+		contexto.strokeStyle = "#9F39F8";
+		contexto.lineWidth= 30;
+		contexto.lineCap= "round";
+		contexto.lineTo(600,400);
+		contexto.stroke();
+		
+		contexto.beginPath();
+		contexto.moveTo(500,550);
+		contexto.strokeStyle = "#9F39F8";
+		contexto.lineWidth= 30;
+		contexto.lineCap= "round";
+		contexto.lineTo(500,365);
+		contexto.stroke();
+
+
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#000000";
+		contexto.fillStyle="#000000";
+		contexto.beginPath();
+		contexto.arc(475,315,5,0,2*Math.PI, true);
+		contexto.stroke();
+		contexto.fill();
+
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#000000";
+		contexto.fillStyle = "#000000";
+		contexto.beginPath();
+		contexto.arc(520,315,5,0,2*Math.PI, true);
+		contexto.stroke();
+		contexto.fill();
+
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#F84039";
+		contexto.fillStyle = "#F84039";
+		contexto.beginPath();
+		contexto.arc(500,330,5,0,Math.PI, false);
+		contexto.stroke();
+		contexto.fill();
+
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = "#9C7C12";
+		contexto.fillStyle = "#9C7C12";
+		contexto.beginPath();
+		contexto.arc(500,300,50,0,Math.PI, true);
+		contexto.fill();
+		contexto.stroke();
+
+	
+		//Agregamos texto:
+		
+
+		var canvas = document.getElementById("milienzo");
+		var contexto = canvas.getContext("2d");
+		contexto.texBaseline = "alphabetic";
+		contexto.textAlign = "left";
+		contexto.font = '90px "Arial" bold';
+		contexto.fillText("Alumna:Mª Mercedes del H. Ledesma Basualdo", 750,675);
+
+
+
+		
+</script>
+
+</section>
+
+<img src="imag/MARIA_CON FONDO.jpg" style="visibility: hidden;">
+<img src="imag/aguacate.png" style="visibility: hidden;">
+<img src="imag/limon.png" style="visibility: hidden;">
+<img src="imag/manzana.png" style="visibility: hidden;">
+
+
+<br><br><br><br>
+<footer id="menu_inferior">
+<nav>	<!-- menú de navegación inferior -->
+	<ul>
+		<a href="index.html">Inicio</a>              |
+
+		<a href="tren.html">Puzzle</a>               |
+
+		<a href="grafico2d.html">Gráfico2D</a>       | 
+
+		<a href="localizacion.html">Localización</a> |
+
+		<a href="alamcenamiento.html">Almacenamiento</a>
+	</ul>
+</nav>
+</footer>
+</body>
+</html>

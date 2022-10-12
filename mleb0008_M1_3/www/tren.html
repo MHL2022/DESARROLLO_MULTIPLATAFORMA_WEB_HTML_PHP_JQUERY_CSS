@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Abrimos la etiqueta de la página -->
+<html lang="es">
+<!-- Definimos el head -->
+<head>
+	<title> Actividad 1_3_Obligatoria </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/miestilo.css">
+	<style>
+		#cajareceptora1 {width:160px;height:100px;padding:10px;border:1px solid #aaaaaa; display: inline-block;}
+		#cajareceptora2 {width:160px;height:100px;padding:10px;border:1px solid #aaaaaa; display: inline-block;}
+		#cajareceptora3 {width:160px;height:100px;padding:10px;border:1px solid #aaaaaa; display: inline-block;}
+		#cajareceptora4 {width:160px;height:100px;padding:10px;border:1px solid #aaaaaa; display: inline-block;}
+		#cajareceptora5 {width:160px;height:100px;padding:10px;border:1px solid #aaaaaa; display: inline-block;}
+ 
+	</style>
+<script>
+
+function allowDrop(ev)
+{
+	ev.preventDefault();
+}
+
+function drag(ev)
+{
+	ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+	ev.preventDefault();
+	var data=ev.dataTransfer.getData("Text");
+	ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<header>
+</header>
+<nav id="menu_superior"><!-- menú de navegación superior -->
+	<ul>
+		<a href="index.html">INICIO</a>              |
+
+		<a href="tren.html"><b><i>TREN</b></i></a>   |
+ 
+		<a href="grafico2d.html">GRÁFICO2D</a>       | 
+
+		<a href="localizacion.html">LOCALIZACIÓN</a> |
+
+		<a href="almacenamiento.html">ALMACENAMIENTO</a>
+	</ul>
+</nav>
+<br><br><br><br><br>
+<section id="cajasyelementos">
+<!-- asignamos un identificador a nuestra caja, en este caso "cajareceptora" y le añadimos los siguientes atributos:ondrop y ondragover -->
+<div id="cajareceptora1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="cajareceptora2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="cajareceptora3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="cajareceptora4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="cajareceptora5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br><br><br><br><br>
+<p>Organiza las siguientes imágenes en el orden correcto:</p><br><br><br>
+<!-- menú de navegación inferior -->
+<img id="elementomovil1" src="imag/vagon2.jpg" draggable="true" ondragstart="drag(event)" width="150" height="92">
+<img id="elementomovil2" src="imag/vagon4.jpg" draggable="true" ondragstart="drag(event)"  width="150" height="92">
+<img id="elementomovil3" src="imag/locomotora.jpg" draggable="true" ondragstart="drag(event)" width="150" height="92">
+<img id="elementomovil4" src="imag/vagon1.jpg" draggable="true" ondragstart="drag(event)"  width="150" height="92">
+<img id="elementomovil5" src="imag/vagon3.jpg" draggable="true" ondragstart="drag(event)"  width="150" height="92">
+<br><br><br><br><br><br>
+</section>
+<footer id="menu_inferior">
+<nav>	<!-- menú de navegación inferior -->
+	<ul>
+		<a href="index.html">Inicio</a>              |
+
+		<a href="tren.html">Puzzle</a>               |
+
+		<a href="grafico2d.html">Gráfico2D</a>       | 
+
+		<a href="localizacion.html">Localización</a> |
+
+		<a href="almacenamiento.html">Almacenamiento</a>
+	</ul>
+</nav>
+</footer>
+</body>
+</html>
